@@ -33,6 +33,10 @@
   .simply-countdown > .simply-section {
     width: 45px;
     height: 45px;
+<<<<<<< HEAD
     padding: 40px;
+=======
+    padding: 3em;
+>>>>>>> origin/master
   }
 }
