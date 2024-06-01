@@ -23,8 +23,8 @@
 <link rel="stylesheet" href="style.css">
 
 <!-- music -->
-<audio  autoplay controls loop hidden>
-  <source src="https://youtu.be/06-XXOTP3Gc?si=SGZ9U2xh4iE2TGgS">
+<audio id="audioPlayer" autoplay controls loop hidden>
+  <source src="lagu/Denny Caknan - Cundamani (Official Music Video).mp3">
 </audio>
 </head>
   <body>
@@ -452,6 +452,14 @@ if(!localStorage.getItem('opened')) {
     })
   });
 });
+</script>
+<script>
+  window.addEventListener('load', function() {
+      var audio = document.getElementById('audioPlayer');
+      var seconds = 2 * 60; // 2 menit ke dalam detik
+      audio.currentTime = seconds;
+      audio.play();
+  });
 </script>
   
 </body>
